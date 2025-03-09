@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import { RevealList } from "next-reveal";
 
 const Hero = () => {
   return (
@@ -18,28 +20,39 @@ const Hero = () => {
               </p>
             </div>
             {/* Heading */}
-            <h2 className="text-2xl sm:text-2xl font-bold md:text-5xl mt-6  md:leading-[3rem] lg:leading-[3.5rem] mb-6">
-              {/* 천연말총은 당신의 숙면을 돕고 건강한 환경을 만듭니다 */}
-              말총을 사용한 베개와 토퍼는 가장 편안하고 탄력 있는 수면을
-              제공합니다.
-            </h2>
-            {/* Description */}
-            <p className="text-gray-700">
-              말에서 가장긴 섬유질인 말꼬리를 사용한 베개와 토퍼는 가장 편안하고
-              탄력 있는 수면을 제공합니다.
-            </p>
+            <RevealList interval={1000} delay={200} opacity={0} duration={1000} distance="50px" origin="bottom">
+              <h2 className="text-2xl sm:text-2xl font-bold md:text-5xl mt-6  md:leading-[3rem] lg:leading-[3.5rem] mb-6">
+                {/* 천연말총은 당신의 숙면을 돕고 건강한 환경을 만듭니다 */}
+                말총을 사용한 베개와 토퍼는 가장 편안하고 탄력 있는 수면을
+                제공합니다.
+              </h2>
+              {/* Description */}
+              <p className="text-gray-700">
+                말에서 가장긴 섬유질인 말꼬리를 사용한 베개와 토퍼는 가장
+                편안하고 탄력 있는 수면을 제공합니다.
+              </p>
+            </RevealList>
           </div>
           {/* Image Content */}
-          <div className="hidden lg:block ">
-            <Image
-              className="rounded-full  "
-              src="/images/horse1.jpg"
-              alt="hero"
-              width={700}
-              height={700}
-              priority
-            />
-          </div>
+          <RevealList
+            interval={2000}
+            delay={400}
+            opacity={0}
+            duration={1000}
+            distance="50px"
+            origin="bottom"
+          >
+            <div className="hidden lg:block ">
+              <Image
+                className="rounded-full  "
+                src="/images/horse1.jpg"
+                alt="hero"
+                width={700}
+                height={700}
+                priority
+              />
+            </div>
+          </RevealList>
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@
 import React from "react";
 import Hero from "./Hero/Hero";
 import About from "./About/About";
+import Products from "./Products/Products";
 // import ScrollReveal from "scrollreveal";
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
     <div className="overflow-hidden  bg-[#f7f6fb]">
       <Hero />
       <About />
+      <Products />
     </div>
   );
 };

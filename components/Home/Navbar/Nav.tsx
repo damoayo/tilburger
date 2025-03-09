@@ -30,7 +30,7 @@ const Nav = ({ openNav }: Props) => {
     <nav
       className={` fixed ${
         navBg ? "bg-[#f7f6fb] shadow-md" : "fixed" // 배경 상태에 따라 클래스 변경
-      } w-full transition-all duration-200 h-[12vh] z-[20109] `} // 네비게이션 바 스타일
+      } w-full transition-all duration-200 h-[12vh] z-[1000] `} // 네비게이션 바 스타일
     >
       <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto ">
         {/* 로고 부분 */}
