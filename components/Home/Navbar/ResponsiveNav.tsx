@@ -14,10 +14,10 @@ const ResponsiveNav = () => {
   };
 
   return (
-    <div>
+    <header>
       <Nav openNav={handleNavShow} />
       <MobileNav showNav={showNav} closeNav={handleNavHide} />
-    </div>
+    </header>
   );
 };
 
