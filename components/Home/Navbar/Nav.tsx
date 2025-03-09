@@ -29,15 +29,15 @@ const Nav = ({ openNav }: Props) => {
   return (
     <nav
       className={` fixed ${
-        navBg ? "bg-white shadow-md" : "fixed" // 배경 상태에 따라 클래스 변경
-      } w-full transition-all duration-200 h-[12vh] z-[1000]`} // 네비게이션 바 스타일
+        navBg ? "bg-[#f7f6fb] shadow-md" : "fixed" // 배경 상태에 따라 클래스 변경
+      } w-full transition-all duration-200 h-[12vh] z-[20109] `} // 네비게이션 바 스타일
     >
-      <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
+      <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto ">
         {/* 로고 부분 */}
         <h1 className="flex items-center text-xl md:text-1xl font-bold">
           {/* <Image src="/logo1.png" priority alt="Logo" width={50} height={50} /> */}
           {/* 로고 이미지 */}
-          <span className="text-xl md:text-3xl text-pink-700">
+          <span className="text-xl md:text-3xl text-[#4169e1]">
             TIL
           </span>BURGER {/* 로고 텍스트 */}
         </h1>

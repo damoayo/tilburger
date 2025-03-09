@@ -18,10 +18,7 @@ const Hero = () => {
               </p>
             </div>
             {/* Heading */}
-            <h2
-              data-aos="fade-up"
-              className="text-2xl sm:text-2xl font-bold md:text-5xl mt-6  md:leading-[3rem] lg:leading-[3.5rem] mb-6"
-            >
+            <h2 className="text-2xl sm:text-2xl font-bold md:text-5xl mt-6  md:leading-[3rem] lg:leading-[3.5rem] mb-6">
               {/* 천연말총은 당신의 숙면을 돕고 건강한 환경을 만듭니다 */}
               말총을 사용한 베개와 토퍼는 가장 편안하고 탄력 있는 수면을
               제공합니다.
@@ -33,11 +30,7 @@ const Hero = () => {
             </p>
           </div>
           {/* Image Content */}
-          <div
-            data-aos="fade-up"
-            data-aos-delay="300"
-            className="hidden lg:block "
-          >
+          <div className="hidden lg:block ">
             <Image
               className="rounded-full  "
               src="/images/horse1.jpg"
