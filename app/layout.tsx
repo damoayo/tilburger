@@ -3,10 +3,9 @@ import { Poppins, Roboto, Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 import Footer from "@/components/Home/Footer/Footer";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
-import { Inter } from "next/font/google";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 
-// import "@mui/material-pigment-css/styles.css";
+import { Inter } from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -48,9 +47,11 @@ export default function RootLayout({
           (inter.className, roboto.className, noto.className, font.className)
         } antialiased`}
       >
-        <ResponsiveNav />
-        {children}
-        <Footer />
+        <AppRouterCacheProvider>
+          <ResponsiveNav />
+          {children}
+          <Footer />
+        </AppRouterCacheProvider>
       </body>
     </html>
   );
