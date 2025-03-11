@@ -36,28 +36,22 @@ export const metadata: Metadata = {
     "TILBURGER is a company that produces eco-friendly pillows and toppers made from horse tail.",
 };
 
-const theme = createTheme({
-  // Add your theme configuration here
-});
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <ThemeProvider theme={theme}>
-      <html lang="ko">
-        <body
-          className={`${
-            (inter.className, roboto.className, noto.className, font.className)
-          } antialiased`}
-        >
-          <ResponsiveNav />
-          {children}
-          <Footer />
-        </body>
-      </html>
-    </ThemeProvider>
+    <html lang="ko">
+      <body
+        className={`${
+          (inter.className, roboto.className, noto.className, font.className)
+        } antialiased`}
+      >
+        <ResponsiveNav />
+        {children}
+        <Footer />
+      </body>
+    </html>
   );
 }
