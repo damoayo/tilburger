@@ -3,7 +3,7 @@ import { Poppins, Roboto, Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 import Footer from "@/components/Home/Footer/Footer";
-
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { Inter } from "next/font/google";
 
 // import "@mui/material-pigment-css/styles.css";
@@ -36,22 +36,28 @@ export const metadata: Metadata = {
     "TILBURGER is a company that produces eco-friendly pillows and toppers made from horse tail.",
 };
 
+const theme = createTheme({
+  // Add your theme configuration here
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
-      <body
-        className={`${
-          (inter.className, roboto.className, noto.className, font.className)
-        } antialiased`}
-      >
-        <ResponsiveNav />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <ThemeProvider theme={theme}>
+      <html lang="ko">
+        <body
+          className={`${
+            (inter.className, roboto.className, noto.className, font.className)
+          } antialiased`}
+        >
+          <ResponsiveNav />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </ThemeProvider>
   );
 }

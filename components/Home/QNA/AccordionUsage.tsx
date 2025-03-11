@@ -38,8 +38,7 @@ export default function ControlledAccordions() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-            Aliquam eget maximus est, id dignissim quam.
+            Lorem ipsum dolor sit! Lorem ipsum dolor sit  consectetur Lorem ipsum dolor sit! Lorem ipsum dolor sit  consectetur Lorem ipsum dolor sit! Lorem ipsum dolor sit  consectetur 
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -61,9 +60,7 @@ export default function ControlledAccordions() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Donec placerat, lectus sed mattis semper, neque lectus feugiat
-            lectus, varius pulvinar diam eros in elit. Pellentesque convallis
-            laoreet laoreet.
+          Lorem ipsum dolor sit! Lorem ipsum dolor sit  consectetur Lorem ipsum dolor sit! Lorem ipsum dolor sit  consectetur Lorem ipsum dolor sit! Lorem ipsum dolor sit  consectetur 
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -85,8 +82,7 @@ export default function ControlledAccordions() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer
-            sit amet egestas eros, vitae egestas augue. Duis vel est augue.
+          Lorem ipsum dolor sit! Lorem ipsum dolor sit  consectetur Lorem ipsum dolor sit! Lorem ipsum dolor sit  consectetur Lorem ipsum dolor sit! Lorem ipsum dolor sit  consectetur 
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -105,8 +101,7 @@ export default function ControlledAccordions() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer
-            sit amet egestas eros, vitae egestas augue. Duis vel est augue.
+          Lorem ipsum dolor sit! Lorem ipsum dolor sit  consectetur Lorem ipsum dolor sit! Lorem ipsum dolor sit  consectetur Lorem ipsum dolor sit! Lorem ipsum dolor sit  consectetur 
           </Typography>
         </AccordionDetails>
       </Accordion>
