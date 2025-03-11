@@ -10,15 +10,25 @@ const Products = () => {
       {/* Define grid */}
       <div className="w-[95%] sm:w-[80%] mx-auto items-center grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Image Content */}
-        <div>
-          <Image
-            src="/images/a.jpg"
-            alt="image"
-            width={500}
-            height={500}
-            className="object-contain"
-          />
-        </div>
+        <RevealList
+          duration={3000}
+          delay={100}
+          opacity={0}
+          interval={100}
+          origin="center"
+          // distance="50px"
+        >
+          <div>
+            <Image
+              src="/images/horse_tail01.png"
+              alt="image"
+              width={600}
+              height={600}
+              style={{ width: "auto", height: "auto" }}
+              className="object-contain rounded-3xl"
+            />
+          </div>
+        </RevealList>
         {/* Text Content */}
         <div className="p-6">
           <RevealList
@@ -54,10 +64,7 @@ const Products = () => {
             origin="center"
           >
             <p className="mt-4 text-gray-600 text-sm font-medium leading-[2rem]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum cum
-              optio animi iste dolorum accusantium fugit. Facilis mollitia
-              accusamus corporis. Placeat neque cupiditate aliquam molestias
-              veritatis reprehenderit quidem modi nesciunt.
+              Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit
             </p>
           </RevealList>
           <ul className="mt-7 space-y-2 text-gray-800">

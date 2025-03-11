@@ -5,7 +5,7 @@ import ChooseCard from "./ChooseCard";
 
 const About = () => {
   return (
-    <div className="pt-16 pb-16">
+    <div id="about" className="pt-16 pb-16">
       <h2 className="mt-6 text-2xl md:text-3xl capitalize font-bold text-center">
         우리가 추구하는 가치는
       </h2>

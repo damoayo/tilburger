@@ -5,7 +5,7 @@ import { RevealList } from "next-reveal";
 
 const Hero = () => {
   return (
-    <div className="w-full pt-[4vh] md:pt-[12vh] h-screen bg-[#f7f6fb">
+    <div id="home" className="w-full pt-[4vh] md:pt-[12vh] h-screen bg-[#f7f6fb">
       <div className="flex justify-center flex-col w-[90%] sm:w-[80%] h-full  mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
           {/* Text Content */}
@@ -20,7 +20,14 @@ const Hero = () => {
               </p>
             </div>
             {/* Heading */}
-            <RevealList interval={1000} delay={200} opacity={0} duration={1000} distance="50px" origin="bottom">
+            <RevealList
+              interval={1000}
+              delay={200}
+              opacity={0}
+              duration={1000}
+              distance="50px"
+              origin="bottom"
+            >
               <h2 className="text-2xl sm:text-2xl font-bold md:text-5xl mt-6  md:leading-[3rem] lg:leading-[3.5rem] mb-6">
                 {/* 천연말총은 당신의 숙면을 돕고 건강한 환경을 만듭니다 */}
                 말총을 사용한 베개와 토퍼는 가장 편안하고 탄력 있는 수면을
