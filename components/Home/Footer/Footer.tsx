@@ -44,10 +44,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold text-gray-800">About Us</h3>
             <ul className="mt-4 space-y-4 text-sm font-semibold text-gray-500">
-              <li>Support Center</li>
-              <li>Customer Support</li>
-              <li>About Us</li>
-              <li>Popular Campaign</li>
+              <li>경기도 안양시 동안구 엘에스로 136, 에이-1717호</li>
+              <li>(호계동, 금정역 2차 에스케이 브이1 타워)</li>
+              <li>(LIFECLEAN CO., LTD.)</li>
             </ul>
           </div>
           {/* Our information Links */}
@@ -77,7 +76,7 @@ const Footer = () => {
                 +031.990.7980
               </li>
               <li className="flex items-center">
-                <FaClock className="mr-2" />7 Days - 8am - 10am
+                <FaClock className="mr-2" />5 Days - 8am - 6pm
               </li>
               <li className="flex items-center">
                 <FaEnvelope className="mr-2" />
