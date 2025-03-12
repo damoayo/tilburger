@@ -9,6 +9,7 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -16,18 +17,28 @@ const Footer = () => {
       <div className="w-[90%] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {/* Logo and description */}
-          <div>
+          <div className="flex flex-col items-center justify-center  space-y-4">
             {/* 로고 */}
-            <h2 className="flex items-center text-xl md:text-1xl font-bold">
-              {/* <Image src="/logo1.png" priority alt="Logo" width={50} height={50} /> */}
+            <div>
               {/* 로고 이미지 */}
+              <a href="#home">
+                <Image
+                  src="/images/logo1.png"
+                  priority
+                  alt="Logo"
+                  width={100}
+                  height={100}
+                />
+              </a>
+            </div>
+            <h2 className="flex items-center text-xl md:text-1xl font-bold">
               <span className="text-xl md:text-3xl text-[#4169e1]">TIL</span>
               BURGER {/* 로고 텍스트 */}
             </h2>
             {/* Description */}
-            <p className="mt-4 text-sm font-medium leading-[2rem] w-[80%] text-gray-600">
+            {/* <p className="mt-4 text-sm font-medium leading-[2rem] w-[80%] text-gray-600">
               Lorem ipsum dolor sit, consectetur . Lorem ipsum dolor sit .
-            </p>
+            </p> */}
           </div>
           {/* About us links */}
           <div>

@@ -34,13 +34,12 @@ const Nav = ({ openNav }: Props) => {
     >
       <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto ">
         {/* 로고 부분 */}
-        <h1 className="flex items-center text-xl md:text-1xl font-bold">
-          {/* <Image src="/logo1.png" priority alt="Logo" width={50} height={50} /> */}
-          {/* 로고 이미지 */}
-          <span className="text-xl md:text-3xl text-[#4169e1]">
-            TIL
-          </span>BURGER {/* 로고 텍스트 */}
-        </h1>
+        <a href="#home">
+          <h1 className="flex items-center text-xl md:text-1xl font-bold">
+            <span className="text-xl md:text-3xl text-[#4169e1]">TIL</span>
+            BURGER {/* 로고 텍스트 */}
+          </h1>
+        </a>
         {/* 네비게이션 링크 부분 (lg 사이즈 이상에서만 표시) */}
         <div className="hidden lg:flex items-center space-x-10">
           {navLinks.map((link) => {
