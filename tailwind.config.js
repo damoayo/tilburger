@@ -14,7 +14,9 @@ module.exports = {
   ],
 
   theme: {
-    extend: {},
+    extend: {
+      scrollBehavior: ['smooth'],
+    },
   },
 
   plugins: [],

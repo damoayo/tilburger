@@ -26,6 +26,21 @@ const Nav = ({ openNav }: Props) => {
     };
   }, []);
 
+  // 부드러운 스크롤 함수
+  const smoothScroll = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    targetId: string
+  ) => {
+    e.preventDefault();
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <nav
       className={` fixed ${
@@ -34,7 +49,11 @@ const Nav = ({ openNav }: Props) => {
     >
       <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto ">
         {/* 로고 부분 */}
-        <a href="#home">
+        <a
+          href="#home"
+          className="nav__link"
+          onClick={(e) => smoothScroll(e, "#home")}
+        >
           <h1 className="flex items-center text-xl md:text-1xl font-bold">
             <span className="text-xl md:text-3xl text-[#4169e1]">TIL</span>
             BURGER {/* 로고 텍스트 */}
@@ -42,17 +61,38 @@ const Nav = ({ openNav }: Props) => {
         </a>
         {/* 네비게이션 링크 부분 (lg 사이즈 이상에서만 표시) */}
         <div className="hidden lg:flex items-center space-x-10">
-          {navLinks.map((link) => {
-            return (
-              <Link href={link.url} key={link.id}>
-                <p className="nav__link">{link.label}</p> {/* 각 링크의 라벨 */}
-              </Link>
-            );
-          })}
+          {navLinks.map((link) => (
+            <Link
+              href={link.url}
+              key={link.id}
+              scroll={false}
+              passHref
+              legacyBehavior // legacyBehavior 추가
+            >
+              <a
+                className="nav__link"
+                onClick={(e) => smoothScroll(e, link.url)}
+              >
+                {link.label}
+              </a>
+            </Link>
+          ))}
         </div>
         {/* 버튼 및 햄버거 메뉴 부분 */}
         <div className="flex items-center space-x-4">
-          <button className="md:px-8 md:py-2.5 px-6 py-2 text-white font-semibold text-base bg-blue-700 hover:bg-blue-900 transition-all duration-200 rounded-full">
+          <button
+            className="md:px-8 md:py-2.5 px-6 py-2 text-white font-semibold text-base bg-blue-700 hover:bg-blue-900 transition-all duration-200 rounded-full"
+            onClick={(e) => {
+              e.preventDefault();
+              const targetElement = document.querySelector("#targetSection"); // 이동할 섹션의 ID
+              if (targetElement) {
+                targetElement.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+              }
+            }}
+          >
             Buy Now {/* 구매 버튼 */}
           </button>
           {/* 햄버거 메뉴 아이콘 (lg 사이즈 미만에서만 표시) */}
