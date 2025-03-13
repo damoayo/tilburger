@@ -6,7 +6,7 @@ import { RevealList } from "next-reveal"; // Replace with the actual path to Rev
 
 const Products = () => {
   return (
-    <div className="pt-24 pb-16">
+    <div id="product" className="pt-24 pb-16">
       {/* Define grid */}
       <div className="w-[95%] sm:w-[80%] mx-auto items-center grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Image Content */}
@@ -52,8 +52,9 @@ const Products = () => {
             distance="70px"
           >
             <h2 className="mt-4 text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus
-              iure commodi cum dolor
+              Lorem ipsum dolor, sit consectetur cum dolor Lorem ipsum dolor sit
+              Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit
+              Lorem ipsum dolor sit Lor
             </h2>
           </RevealList>
           <RevealList
@@ -64,7 +65,9 @@ const Products = () => {
             origin="center"
           >
             <p className="mt-4 text-gray-600 text-sm font-medium leading-[2rem]">
-              Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit
+              Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit
+              Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit
+              Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit
             </p>
           </RevealList>
           <ul className="mt-7 space-y-2 text-gray-800">
