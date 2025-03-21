@@ -81,7 +81,7 @@ const Nav = ({ openNav }: Props) => {
             legacyBehavior
           >
             <a
-              className={`text-[#e2e2e2] hover:text-green-400 no-underline flex flex-col text-inherit items-center space-x-1 `}
+              className={`text-[#222] hover:text-green-400 no-underline flex flex-col text-inherit items-center space-x-1 `}
             >
               <FontAwesomeIcon className="text-2xl" icon={faHome} />
               <span className="text-sm">Home</span>
@@ -94,7 +94,7 @@ const Nav = ({ openNav }: Props) => {
             passHref
             legacyBehavior
           >
-            <a className="text-[#e2e2e2] hover:text-green-400 no-underline text-inherit flex flex-col items-center space-x-1">
+            <a className="text-[#222] hover:text-green-400 no-underline text-inherit flex flex-col items-center space-x-1">
               <FontAwesomeIcon className="text-2xl" icon={faCamera} />
               <span className="text-sm">About</span>
             </a>
@@ -105,7 +105,7 @@ const Nav = ({ openNav }: Props) => {
             passHref
             legacyBehavior
           >
-            <a className="text-[#e2e2e2] hover:text-green-400 no-underline text-inherit flex flex-col items-center space-x-1">
+            <a className="text-[#222] hover:text-green-400 no-underline text-inherit flex flex-col items-center space-x-1">
               <FontAwesomeIcon className="text-2xl" icon={faTruck} />
               <span className="text-sm">Product</span>
             </a>
@@ -116,7 +116,7 @@ const Nav = ({ openNav }: Props) => {
             passHref
             legacyBehavior
           >
-            <a className="text-[#e2e2e2]  hover:text-green-400 no-underline text-inherit flex flex-col items-center ">
+            <a className="text-[#222]  hover:text-green-400 no-underline text-inherit flex flex-col items-center ">
               <FontAwesomeIcon className="text-3xl" icon={faHandsBound} />
               <span className="text-xs">Sustainability</span>
             </a>
@@ -127,7 +127,7 @@ const Nav = ({ openNav }: Props) => {
             passHref
             legacyBehavior
           >
-            <a className="text-[#e2e2e2] hover:text-green-400 no-underline text-inherit flex flex-col items-center space-x-1">
+            <a className="text-[#222] hover:text-green-400 no-underline text-inherit flex flex-col items-center space-x-1">
               <FontAwesomeIcon className="text-2xl" icon={faQuestionCircle} />
               <span className="text-sm">Q&A</span>
             </a>
@@ -139,7 +139,7 @@ const Nav = ({ openNav }: Props) => {
             passHref
             legacyBehavior
           >
-            <a className="text-[#e2e2e2]  hover:text-green-400 no-underline text-inherit flex flex-col items-center space-x-1">
+            <a className="text-[#222]  hover:text-green-400 no-underline text-inherit flex flex-col items-center space-x-1">
               <FontAwesomeIcon className="text-2xl" icon={faHeadphones} />
               <span className="text-sm">Contact</span>
             </a>
