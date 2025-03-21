@@ -56,7 +56,7 @@ export default function CustomizedAccordions() {
     };
 
   return (
-    <div style={{ fontFamily: "'Roboto', sans-serif" }}>
+    <div className="mt-32" style={{ fontFamily: "'Roboto', sans-serif" }}>
       <Typography variant="h4" sx={{ marginBottom: 2, textAlign: "center" }}>
         Q&A
       </Typography>

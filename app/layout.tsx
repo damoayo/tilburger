@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Roboto, Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
-import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
+import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav.tsx";
 import Footer from "@/components/Home/Footer/Footer";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 

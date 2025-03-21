@@ -3,6 +3,7 @@ import Hero from "./Hero/Hero";
 import About from "./About/About";
 import Products from "./Products/Products";
 import QNA from "./QNA/QNA";
+import Contact from "./Contact/Contact";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <About />
       <Products />
       <QNA />
+      <Contact />
     </div>
   );
 };
