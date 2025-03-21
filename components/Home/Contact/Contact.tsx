@@ -13,7 +13,7 @@ export default function Home() {
     setLoading(true);
     setSuccess(false);
 
-    const res = await fetch("/api/send-email", {
+    const res = await fetch("./app/api/send-email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, message }),
