@@ -6,7 +6,7 @@ import { RevealList } from "next-reveal"; // Replace with the actual path to Rev
 
 const Products = () => {
   return (
-    <div id="product" className="pt-24 pb-16">
+    <div id="product" className="pt-32 pb-16">
       {/* Define grid */}
       <div className="w-[95%] sm:w-[80%] mx-auto items-center grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Image Content */}

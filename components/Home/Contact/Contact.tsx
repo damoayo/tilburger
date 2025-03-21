@@ -36,7 +36,7 @@ export default function Home() {
       className="d-flex justify-content-center align-items-center  p-16 bg-light"
     >
       <div
-        className="card shadow-lg border-0 rounded-4 mt-32 p-4"
+        className="card shadow-lg border-0 rounded-4 mt-32 p-4" // Navbar의 높이만큼 내려주기 위해 mt-32 추가
         style={{ maxWidth: "450px", width: "100%" }}
       >
         <h2 className="text-center fw-bold mb-3 text-primary">문의하기</h2>

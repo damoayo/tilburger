@@ -5,8 +5,8 @@ import ChooseCard from "./ChooseCard";
 
 const About = () => {
   return (
-    <div id="about" className="pt-16 pb-16">
-      <h2 className="mt-6 text-2xl md:text-3xl capitalize font-bold text-center">
+    <div id="sustainability" className="pt-16  pb-16">
+      <h2 className="mt-32 text-2xl md:text-3xl capitalize font-bold text-center">
         우리가 추구하는 가치는
       </h2>
       <div className="mt-20 grid w-[90%] mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">

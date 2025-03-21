@@ -56,6 +56,7 @@ export default function CustomizedAccordions() {
     };
 
   return (
+    // Navbar의 높이만큼 내려주기 위해 mt-32 추가
     <div className="mt-32" style={{ fontFamily: "'Roboto', sans-serif" }}>
       <Typography variant="h4" sx={{ marginBottom: 2, textAlign: "center" }}>
         Q&A

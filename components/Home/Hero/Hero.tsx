@@ -6,7 +6,7 @@ import { RevealList } from "next-reveal";
 const Hero = () => {
   return (
     <div
-      id="home"
+      id="about"
       className="w-full pt-[4vh] md:pt-[12vh] h-screen bg-[#f7f6fb"
     >
       <div className="flex justify-center flex-col w-[90%] sm:w-[80%] h-full  mx-auto">
