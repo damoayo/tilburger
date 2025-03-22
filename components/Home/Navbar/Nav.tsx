@@ -54,8 +54,8 @@ const Nav = ({ openNav }: Props) => {
   return (
     <nav
       className={`fixed ${
-        navBg ? "bg-[#e1e1e14f] shadow-md" : "bg-opacity-25"
-      } w-full transition-all duration-300 h-[12vh] z-[1000] backdrop-blur-lg`}
+        navBg ? "bg-[#e1e1e14f] shadow-md backdrop-blur-lg" : "bg-opacity-100"
+      } w-full transition-all duration-300 h-[12vh] z-[1000] `}
     >
       <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
         {/* 로고 */}
