@@ -48,8 +48,8 @@ export default function Carousel() {
               </h2>
               {/* Description */}
               <p className="text-lg text-[#424242] text-left">
-                말에서 가장긴 섬유질인 말꼬리를 사용한 베개는 적당한 습도와
-                온도를 낮춰,
+                말에서 가장긴 섬유질인 말꼬리를 사용한 베개는 탁월한 습도조절
+                능력과 베개의 온도를 낮춰 주어,
                 <br />
                 베개온도를 32~33도 내외로 유지하여 가장 편안하고 탄력 있는
                 수면을 제공합니다.
