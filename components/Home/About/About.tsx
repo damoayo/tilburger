@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div id="about" className="pt-16  pb-16">
       <h2 className="mt-32 text-2xl md:text-3xl capitalize font-bold text-center">
-        틸버거 배게는 어떻게 만들어질까요?
+        TILBURGER 배게는 어떻게 만들어질까요?
       </h2>
       <div className="mt-20 grid w-[90%] mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
         <RevealList
