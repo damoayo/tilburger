@@ -16,7 +16,7 @@ export default function Carousel() {
       <div className="carousel-inner">
         <div className="carousel-item active relative w-full h-screen">
           <Image
-            src="/images/main1.jpg"
+            src="/images/product1.png"
             alt="Slide 1"
             fill
             className="object-cover"
