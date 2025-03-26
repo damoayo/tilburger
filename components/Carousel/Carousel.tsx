@@ -41,22 +41,21 @@ export default function Carousel() {
               distance="100px"
               origin="bottom"
             >
-              <h2 className="text-2xl text-[#424242] sm:text-2xl font-bold md:text-5xl mt-6  md:leading-[3rem] lg:leading-[3.5rem] mb-6">
+              <h2 className="text-2xl text-[#424242] sm:text-2xl font-bold md:text-5xl mt-6  md:leading-[3rem] lg:leading-[3.5rem] mb-6 text-left">
                 {/* 천연말총은 당신의 숙면을 돕고 건강한 환경을 만듭니다 */}
-                말총을 사용한 베개와 토퍼는 가장 편안하고 탄력 있는 수면을
-                제공합니다.
+                말총을 사용한 베개와 토퍼는
+                <br /> 가장 편안하고 탄력 있는 수면을 제공합니다.
               </h2>
               {/* Description */}
-              <p className="text-lg text-[#424242]">
-                말에서 가장긴 섬유질인 말꼬리를 사용한 베개와 토퍼는 가장
-                편안하고 탄력 있는 수면을 제공합니다.
+              <p className="text-lg text-[#424242] text-left">
+                말에서 가장긴 섬유질인 말꼬리를 사용한 베개는 적당한 습도와
+                온도를 낮춰,
+                <br />
+                베개온도를 32~33도 내외로 유지하여 가장 편안하고 탄력 있는
+                수면을 제공합니다.
               </p>
             </RevealList>
           </div>
-          {/* <div className="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div> */}
         </div>
         <div className="carousel-item  relative w-full h-screen">
           <Image
