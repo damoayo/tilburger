@@ -9,21 +9,24 @@ type Props = {
 
 const ChooseCard = ({ image, title, linkText }: Props) => {
   return (
-    <div>
-      <Image
-        src={image}
-        alt={title}
-        width={200}
-        height={200}
-        className="object-contain mx-auto"
-      />
-      <h1 className="to-current text-center text-lg mt-5 mb-5 font-semibold text-gray-800">
+    <div className="flex flex-col items-center">
+      <div className="relative w-48 h-48 mb-6">
+        <Image
+          src={image}
+          alt={title}
+          fill
+          className="object-contain transition-transform duration-300 hover:scale-105"
+        />
+      </div>
+      <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">
         {title}
-      </h1>
-      <p className="text-gray-600 text-center font-medium text-sm mb-7"></p>
-      <p className="text-center font-semibold text-blue-900 hover:text-blue-950 transition-all duration-200 cursor-pointer">
-        {linkText} &#8594;
-      </p>
+      </h3>
+      <div className="flex items-center text-[#daa520] hover:text-[#b8860b] transition-colors duration-300 cursor-pointer group">
+        <span className="text-sm font-medium">{linkText}</span>
+        <span className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
+          →
+        </span>
+      </div>
     </div>
   );
 };
