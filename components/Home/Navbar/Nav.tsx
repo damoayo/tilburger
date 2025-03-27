@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
   faCamera,
-  faQuestionCircle,
+  // faQuestionCircle,
   faHandsBound,
   faBars,
   faTruck,
@@ -121,7 +121,7 @@ const Nav = ({ openNav }: Props) => {
               <span className="text-xs">Sustainability</span>
             </a>
           </Link>
-          <Link
+{/*           <Link
             href="#qna"
             onClick={(e) => smoothScroll(e, "#qna")}
             passHref
@@ -131,7 +131,7 @@ const Nav = ({ openNav }: Props) => {
               <FontAwesomeIcon className="text-2xl" icon={faQuestionCircle} />
               <span className="text-sm">Q&A</span>
             </a>
-          </Link>
+          </Link> */}
 
           <Link
             href="#contact"

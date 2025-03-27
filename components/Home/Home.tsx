@@ -2,9 +2,10 @@ import React from "react";
 import Hero from "./Sustainability/Sustainability";
 import About from "./About/About";
 import Products from "./Products/Products";
-import QNA from "./QNA/QNA";
-import Contact from "./Contact/Contact";
+// import QNA from "./QNA/QNA";
+// import Contact from "./Contact/Contact";
 import Carousel from "../Carousel/Carousel";
+import QNAContact from "./QNAContact/QNAContact";
 
 const Home = () => {
   return (
@@ -13,8 +14,9 @@ const Home = () => {
       <About />
       <Products />
       <Hero />
-      <QNA />
-      <Contact />
+      <QNAContact />
+      {/* <QNA /> */}
+      {/* <Contact /> */}
     </div>
   );
 };
