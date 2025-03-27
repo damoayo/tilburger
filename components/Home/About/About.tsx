@@ -38,7 +38,7 @@ const About = () => {
             <ChooseCard
               image="/images/about2.png"
               title="분리한 꼬리털을 특별한 소독과 건조를 반복"
-              linkText="속독과 건조"
+              linkText="소독과 건조"
             />
           </div>
         </RevealList>
