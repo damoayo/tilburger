@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Carousel() {
   return (
-    <div className="relative w-full h-screen">
+    <div id="home" className="relative w-full h-screen">
       <Image
         src="/images/main3.png"
         alt="Premium Sleep Experience"
@@ -42,7 +42,6 @@ export default function Carousel() {
     </div>
   );
 }
-
 
 /*         <div className="carousel-item relative w-full h-screen">
           <Image

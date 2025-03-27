@@ -57,12 +57,12 @@ const Nav = ({ openNav }: Props) => {
         navBg ? "bg-[#e1e1e14f] shadow-md backdrop-blur-lg" : "bg-opacity-100"
       } w-full transition-all duration-300 h-[12vh] z-[1000] `}
     >
-      <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
+      <div className="container mx-auto px-4 h-full flex justify-between items-center">
         {/* 로고 */}
         <a
           href="#home"
           onClick={(e) => smoothScroll(e, "#home")}
-          className=" no-underline text-inherit flex items-center"
+          className="no-underline text-inherit flex items-center"
         >
           <span className="text-2xl font-bold text-[#daa520] bg-white px-1 py-1 rounded-lg shadow-md">
             TIL
@@ -121,7 +121,7 @@ const Nav = ({ openNav }: Props) => {
               <span className="text-xs">Sustainability</span>
             </a>
           </Link>
-{/*           <Link
+          {/*           <Link
             href="#qna"
             onClick={(e) => smoothScroll(e, "#qna")}
             passHref

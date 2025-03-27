@@ -14,6 +14,20 @@ import Image from "next/image";
 import { RevealList } from "next-reveal";
 
 const Footer = () => {
+  const smoothScroll = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    targetId: string
+  ) => {
+    e.preventDefault();
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <footer className="relative bg-gradient-to-b from-[#f7f6fb] to-white">
       {/* 배경 효과 */}
@@ -34,20 +48,28 @@ const Footer = () => {
           >
             <div className="flex flex-col items-center md:items-start space-y-4">
               <div className="relative group">
-                <a
-                  href="#home"
-                  className="block transition-transform hover:scale-105"
+                <div
+                  className="relative w-[100px] h-[100px] cursor-pointer"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const targetElement = document.querySelector("#home");
+                    if (targetElement) {
+                      targetElement.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                      });
+                    }
+                  }}
                 >
                   <Image
                     src="/images/logo1.png"
                     priority
                     alt="Logo"
-                    width={100}
-                    height={100}
-                    className="rounded-lg shadow-md"
+                    fill
+                    className="rounded-lg shadow-md object-contain"
                   />
-                </a>
-                <div className="absolute inset-0 bg-[#daa520]/10 opacity-0 group-hover:opacity-100 rounded-lg transition-opacity" />
+                  <div className="absolute inset-0 bg-[#daa520]/10 opacity-0 group-hover:opacity-100 rounded-lg transition-opacity" />
+                </div>
               </div>
               <h2 className="flex items-center text-xl font-bold">
                 <span className="text-[#daa520]">Natural</span>
