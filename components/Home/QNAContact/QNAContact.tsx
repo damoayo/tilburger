@@ -78,6 +78,7 @@ const QNAContact = () => {
     e.preventDefault();
     setLoading(true);
     setError(null);
+    setSuccess(false);
 
     try {
       const response = await fetch("/api/contact", {
@@ -97,6 +98,11 @@ const QNAContact = () => {
       setSuccess(true);
       setEmail("");
       setMessage("");
+
+      // 3초 후 성공 메시지 숨기기
+      setTimeout(() => {
+        setSuccess(false);
+      }, 3000);
     } catch (err) {
       setError(
         err instanceof Error ? err.message : "메일 전송에 실패했습니다."
@@ -244,11 +250,14 @@ const QNAContact = () => {
                   </label>
                   <input
                     type="email"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#daa520] focus:border-transparent"
-                    placeholder="email@example.com"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#daa520] focus:border-transparent transition-all duration-200"
+                    placeholder="회신받으실 이메일 주소를 입력해주세요"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
+                    pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}"
+                    title="올바른 이메일 주소를 입력해주세요"
+                    disabled={loading}
                   />
                 </div>
                 <div>
@@ -256,26 +265,58 @@ const QNAContact = () => {
                     문의 내용
                   </label>
                   <textarea
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#daa520] focus:border-transparent"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#daa520] focus:border-transparent transition-all duration-200"
                     rows={4}
+                    placeholder="문의하실 내용을 자세히 적어주세요 (최소 10자)"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     required
+                    minLength={10}
+                    disabled={loading}
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 text-white bg-[#daa520] rounded-lg hover:bg-[#b8860b] transition-colors duration-300 disabled:opacity-50"
+                  className="w-full px-6 py-3 text-white bg-[#daa520] rounded-lg hover:bg-[#b8860b] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-[1.02] active:scale-[0.98]"
                   disabled={loading}
                 >
-                  {loading ? "전송 중..." : "문의 보내기"}
+                  {loading ? (
+                    <span className="flex items-center justify-center">
+                      <svg
+                        className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                        ></circle>
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                        ></path>
+                      </svg>
+                      전송 중...
+                    </span>
+                  ) : (
+                    "문의 보내기"
+                  )}
                 </button>
                 {error && (
-                  <div className="text-red-600 text-center mt-4">{error}</div>
+                  <div className="text-red-600 text-center mt-4 p-3 bg-red-50 rounded-lg">
+                    {error}
+                  </div>
                 )}
                 {success && (
-                  <div className="text-green-600 text-center mt-4">
-                    메일이 성공적으로 전송되었습니다!
+                  <div className="text-green-600 text-center mt-4 p-3 bg-green-50 rounded-lg">
+                    문의가 성공적으로 전송되었습니다. 빠른 시일 내에 답변
+                    드리겠습니다.
                   </div>
                 )}
               </form>
