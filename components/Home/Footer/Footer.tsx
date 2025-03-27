@@ -76,7 +76,7 @@ const Footer = () => {
                 <span className="ml-2 text-gray-700">Horsehair</span>
               </h2>
               <p className="text-gray-600 text-sm leading-relaxed text-center md:text-left">
-                프리미엄 말총 베개로 건강한 수면을 선사합니다
+                프리미엄 말총 베개로 건강한 수면을 선사합니다.
               </p>
             </div>
           </RevealList>
