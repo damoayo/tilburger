@@ -59,18 +59,25 @@ const Nav = ({ openNav }: Props) => {
     >
       <div className="container mx-auto px-4 h-full flex justify-between items-center">
         {/* 로고 */}
-        <a
+        <Link
           href="#home"
           onClick={(e) => smoothScroll(e, "#home")}
-          className="no-underline text-inherit flex items-center"
+          passHref
+          legacyBehavior
         >
-          <span className="text-2xl font-bold text-[#daa520] bg-white px-1 py-1 rounded-lg shadow-md">
-            TIL
-          </span>
-          <h1 className="ml-1 pt-1 text-xl md:text-2xl font-bold text-gray-500">
-            Burger
-          </h1>
-        </a>
+          <a
+            // href="#home"
+            // onClick={(e) => smoothScroll(e, "#home")}
+            className="no-underline text-inherit flex items-center"
+          >
+            <span className="text-2xl font-bold text-[#daa520] bg-white px-1 py-1 rounded-lg shadow-md">
+              TIL
+            </span>
+            <h1 className="ml-1 pt-1 text-xl md:text-2xl font-bold text-gray-500">
+              Burger
+            </h1>
+          </a>
+        </Link>
 
         {/* 네비게이션 링크 */}
         <div className="hidden lg:flex items-center space-x-8">
@@ -121,7 +128,6 @@ const Nav = ({ openNav }: Props) => {
               <span className="text-xs">Sustainability</span>
             </a>
           </Link>
-
 
           <Link
             href="#contact"
