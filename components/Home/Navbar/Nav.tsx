@@ -121,17 +121,7 @@ const Nav = ({ openNav }: Props) => {
               <span className="text-xs">Sustainability</span>
             </a>
           </Link>
-          {/*           <Link
-            href="#qna"
-            onClick={(e) => smoothScroll(e, "#qna")}
-            passHref
-            legacyBehavior
-          >
-            <a className="text-[#222] hover:text-[#daa520] no-underline text-inherit flex flex-col items-center space-x-1">
-              <FontAwesomeIcon className="text-2xl" icon={faQuestionCircle} />
-              <span className="text-sm">Q&A</span>
-            </a>
-          </Link> */}
+
 
           <Link
             href="#contact"
