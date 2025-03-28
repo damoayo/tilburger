@@ -14,20 +14,6 @@ import Image from "next/image";
 import { RevealList } from "next-reveal";
 
 const Footer = () => {
-  const smoothScroll = (
-    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
-    targetId: string
-  ) => {
-    e.preventDefault();
-    const targetElement = document.querySelector(targetId);
-    if (targetElement) {
-      targetElement.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  };
-
   return (
     <footer className="relative bg-gradient-to-b from-[#f7f6fb] to-white">
       {/* 배경 효과 */}
