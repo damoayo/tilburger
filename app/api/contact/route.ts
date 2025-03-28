@@ -124,12 +124,13 @@ ${message}
         "문의가 성공적으로 전송되었습니다. 빠른 시일 내에 답변 드리겠습니다.",
     });
   } catch (error) {
-    console.error("이메일 전송 실패:", error);
     return NextResponse.json(
       {
         error: "이메일 전송에 실패했습니다. 잠시 후 다시 시도해주세요.",
         details:
-          process.env.NODE_ENV === "development" ? error.message : undefined,
+          process.env.NODE_ENV === "development" && error instanceof Error
+            ? error.message
+            : undefined,
       },
       { status: 500 }
     );
