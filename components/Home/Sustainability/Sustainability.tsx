@@ -7,6 +7,7 @@ import {
   FaRecycle,
   FaHandHoldingHeart,
   FaChartLine,
+  FaPlay,
 } from "react-icons/fa";
 
 const Sustainability = () => {
@@ -133,6 +134,61 @@ const Sustainability = () => {
             </p>
           </div>
         </RevealList>
+
+        {/* 동영상 섹션 */}
+        <div className="mt-16">
+          <RevealList
+            duration={1000}
+            delay={100}
+            opacity={0}
+            interval={100}
+            origin="bottom"
+            distance="50px"
+          >
+            <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+              <h3 className="text-2xl font-bold text-[#daa520] mb-6 text-center">
+                우리가 만들어 나가는 세상
+              </h3>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {/* 첫 번째 동영상 */}
+                <div className="relative aspect-video rounded-xl overflow-hidden shadow-md group">
+                  <iframe
+                    src="https://www.youtube.com/embed/Cc2aNtukYHc"
+                    title="환경 친화적인 말총 베개 제작 과정"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                  ></iframe>
+                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <div className="bg-[#daa520] rounded-full p-3 transform scale-75 group-hover:scale-100 transition-transform duration-300 opacity-0 group-hover:opacity-100">
+                      <FaPlay className="text-white text-2xl" />
+                    </div>
+                  </div>
+                </div>
+
+                {/* 두 번째 동영상 */}
+                <div className="relative aspect-video rounded-xl overflow-hidden shadow-md group">
+                  <iframe
+                    src="https://www.youtube.com/embed/gCNSU2CO3oE"
+                    title="천연 말총 베개의 환경적 가치"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                  ></iframe>
+                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <div className="bg-[#daa520] rounded-full p-3 transform scale-75 group-hover:scale-100 transition-transform duration-300 opacity-0 group-hover:opacity-100">
+                      <FaPlay className="text-white text-2xl" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p className="text-gray-600 text-center mt-6">
+                수십 년간의 연구와 장인 정신으로 만들어진 우리의 지속 가능한
+                제작 과정을 확인해보세요
+              </p>
+            </div>
+          </RevealList>
+        </div>
       </div>
     </div>
   );
