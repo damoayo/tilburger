@@ -20,7 +20,7 @@ const Sustainability = () => {
     },
     {
       icon: <FaRecycle className="text-4xl text-[#daa520] text-left" />,
-      title: "지속 가능한 생산",
+      title: "지속 가능한 자연",
       description:
         "동물과 식물 그리고 나무의 섬유를 사용하여 자연이 가진 오랜 수명만큼 제품이 오래동안 사용되길 바라기 때문입니다.",
     },
