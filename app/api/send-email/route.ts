@@ -17,7 +17,7 @@ export async function POST(req: Request) {
     // 메일 옵션
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: "mamapai@naver.com", // 수신자 이메일
+      to: "export@zs-korea.com", // 수신자 이메일
       subject: `Landing Page 문의 from ${email}`,
       text: message,
     };
