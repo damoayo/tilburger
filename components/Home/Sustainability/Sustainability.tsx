@@ -66,7 +66,7 @@ const Sustainability = () => {
           <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-lg">
             <Image
               src="/images/horse_tail01.png"
-              alt="지속 가능성"
+              alt="지속 가능성 사진"
               fill
               className="object-cover"
             />
