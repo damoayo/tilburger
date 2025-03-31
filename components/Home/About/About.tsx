@@ -18,7 +18,7 @@ const About = () => {
       <div className="relative z-10 container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#daa520] mb-4">
-            TILBURGER 배게는 어떻게 만들어질까요?
+            TILBURGER 베개는 어떻게 만들어질까요?
           </h2>
           <p className="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto">
             최고급 말총으로 만드는 프리미엄 베개의 제작 과정을 소개합니다
