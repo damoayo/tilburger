@@ -3,13 +3,10 @@ import React from "react";
 import {
   FaMapMarkerAlt,
   FaPhoneAlt,
-  FaClock,
   FaEnvelope,
   FaFacebook,
   FaTwitter,
   FaInstagram,
-  FaAddressCard,
-  FaAddressBook,
   FaHome,
 } from "react-icons/fa";
 import Link from "next/link";
