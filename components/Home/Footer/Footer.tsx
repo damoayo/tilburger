@@ -202,7 +202,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-gray-200">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-gray-600">
-              © 2024 Natural Horsehair. All rights reserved.
+              © 2024 TilBurger. All rights reserved.
             </p>
             <div className="flex items-center space-x-6">
               <span className="text-sm text-gray-600">Follow Us:</span>
