@@ -10,7 +10,7 @@ type Props = {
 const ChooseCard = ({ image, title, linkText }: Props) => {
   return (
     <div className="flex flex-col items-center">
-      <div className="relative w-48 h-48 mb-6">
+      <div className="relative w-80 h-48 mb-6">
         <Image
           src={image}
           alt={title}
@@ -18,7 +18,7 @@ const ChooseCard = ({ image, title, linkText }: Props) => {
           className="object-contain transition-transform duration-300 hover:scale-105"
         />
       </div>
-      <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">
+      <h3 className="text-xl font-bold text-gray-800 mb-4 text-left">
         {title}
       </h3>
       <div className="flex items-center text-[#daa520] hover:text-[#b8860b] transition-colors duration-300 cursor-pointer group">

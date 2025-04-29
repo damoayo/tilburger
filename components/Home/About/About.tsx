@@ -37,7 +37,7 @@ const About = () => {
             <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
               <ChooseCard
                 image="/images/about1.png"
-                title="조직이 치밀한 말꼬리 털만을 수거"
+                title="조직이 치밀한 말꼬리 털만을 수거합니다.                             "
                 linkText="꼬리털만 수거"
               />
             </div>
