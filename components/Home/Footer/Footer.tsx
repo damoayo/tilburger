@@ -83,13 +83,17 @@ const Footer = () => {
               </h3>
               <ul className="space-y-3">
                 <li className="text-sm text-gray-600 hover:text-[#daa520] transition-colors">
-                  경기도 안양시 동안구 엘에스로 136
-                </li>
-                <li className="text-sm text-gray-600 hover:text-[#daa520] transition-colors">
-                  에이-1717호 (호계동, 금정역 2차 에스케이 브이1 타워)
-                </li>
-                <li className="text-sm text-gray-600 hover:text-[#daa520] transition-colors">
                   LIFECLEAN CO., LTD.
+                </li>
+                <li className="text-sm text-gray-600 hover:text-[#daa520] transition-colors">
+                  +82 (0)31-990-7980
+                </li>
+                <li className="text-sm text-gray-600 hover:text-[#daa520] transition-colors">
+                  export@zs-korea.com
+                </li>
+                <li className="text-sm text-gray-600 hover:text-[#daa520] transition-colors">
+                  경기도 안양시 동안구 엘에스로 136, 에이-1717호 (호계동, 금정역
+                  2차 에스케이 브이1 타워)
                 </li>
               </ul>
             </div>
