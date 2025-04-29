@@ -8,6 +8,9 @@ import {
   FaFacebook,
   FaTwitter,
   FaInstagram,
+  FaAddressCard,
+  FaAddressBook,
+  FaHome,
 } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
@@ -160,29 +163,33 @@ const Footer = () => {
                 Contact Info
                 <div className="absolute bottom-0 left-0 w-full h-0.5 bg-[#daa520]/30"></div>
               </h3>
-              <ul className="space-y-3">
+              <ul className="space-y-3 text-left">
                 <li className="flex items-center space-x-3 group">
                   <FaMapMarkerAlt className="text-[#daa520] group-hover:scale-110 transition-transform" />
                   <span className="text-sm text-gray-600 group-hover:text-[#daa520] transition-colors">
-                    Amsterdam, Netherlands
+                    LIFECLEAN CO., LTD.
                   </span>
                 </li>
                 <li className="flex items-center space-x-3 group">
                   <FaPhoneAlt className="text-[#daa520] group-hover:scale-110 transition-transform" />
                   <span className="text-sm text-gray-600 group-hover:text-[#daa520] transition-colors">
-                    +031.990.7980
+                    +82 (0)31-990-7980
                   </span>
                 </li>
-                <li className="flex items-center space-x-3 group">
-                  <FaClock className="text-[#daa520] group-hover:scale-110 transition-transform" />
-                  <span className="text-sm text-gray-600 group-hover:text-[#daa520] transition-colors">
-                    5 Days - 8am - 6pm
-                  </span>
-                </li>
+
                 <li className="flex items-center space-x-3 group">
                   <FaEnvelope className="text-[#daa520] group-hover:scale-110 transition-transform" />
                   <span className="text-sm text-gray-600 group-hover:text-[#daa520] transition-colors">
                     export@zs-korea.com
+                  </span>
+                </li>
+                <li className="flex items-center space-x-3 group">
+                  <FaHome className="text-5xl text-[#daa520] group-hover:scale-110 transition-transform" />
+                  <span className="text-sm text-gray-600 group-hover:text-[#daa520] transition-colors">
+                    <a>
+                      OFFICE: A-1717, GeumJeong Station SK V1 Tower,136, LS-ro,
+                      Dongan-gu, Anyang-si,Gyeonggi-do, Republic of Korea
+                    </a>
                   </span>
                 </li>
               </ul>
