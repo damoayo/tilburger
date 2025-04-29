@@ -164,7 +164,7 @@ const Footer = () => {
                 <li className="flex items-center space-x-3 group">
                   <FaMapMarkerAlt className="text-[#daa520] group-hover:scale-110 transition-transform" />
                   <span className="text-sm text-gray-600 group-hover:text-[#daa520] transition-colors">
-                    LIFECLEAN CO., LTD.
+                    LIFECLEAN CO., LTD
                   </span>
                 </li>
                 <li className="flex items-center space-x-3 group">
