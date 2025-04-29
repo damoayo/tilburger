@@ -75,15 +75,17 @@ const Sustainability = () => {
                 <h3 className="text-2xl text-[#bdbcbc] md:text-3xl font-bold mb-6">
                   수면과 건강한 환경을 위해
                 </h3>
-                <p className="text-lg md:text-xl leading-relaxed space-y-4">
+                <p className="text-lg text-yellow-100 md:text-xl leading-relaxed space-y-4">
                   <span className="block mb-4">
                     우리는 베개의 통기성과 땀의 흡수성, 탄성이 중요하다고
-                    생각했고, 그런 소재를 찾아 자연을 뒤졌으며 훌륭한 말의
-                    꼬리털에서 찾았습니다.
+                    생각해서,
+                    <br /> 그런 소재를 찾아 자연을 뒤졌으며, 결국 훌륭한 말의
+                    꼬리털에서 그것을 찾았습니다.
                   </span>
                   <span className="block">
-                    말총베개는 통기성이 좋아 공기 흐름을 원활히 해서 체내 열을
-                    효과적으로 처리할 수 있습니다
+                    말총베개는 통기성이 좋아 공기 흐름을 원활히 해서
+                    <br />
+                    체내 열을 효과적으로 처리할 수 있습니다
                   </span>
                 </p>
               </div>
